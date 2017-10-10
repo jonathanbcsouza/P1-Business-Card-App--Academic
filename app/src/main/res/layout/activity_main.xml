@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_make_music_now"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000"
+    tools:context="com.example.jonathan.makemusicnow_01.MainActivity">
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_alignTop="@+id/record"
+        android:layout_alignBottom="@+id/mastering"
+        android:layout_alignRight="@+id/textrecord"
+
+        />
+
+    <ImageView
+        android:id="@+id/piano"
+        android:src="@drawable/piano"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:layout_alignTop="@+id/record"
+        android:layout_alignBottom="@+id/mastering"
+        android:layout_toRightOf="@id/background2"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/textitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nomeapp"
+        android:textSize="36sp"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_above="@id/background2"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@id/record"
+        android:src="@drawable/record"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/mixing"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordings"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/mixing"
+        android:layout_above="@id/mixing"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textmixing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Mixing"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/mixing"
+        android:layout_below="@id/textrecord"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textmastering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Mastering"
+        android:textSize="24sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/mastering"
+        android:layout_below="@id/textmixing"
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textbusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textbusiness"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:layout_above="@id/textbusiness"
+        android:layout_below="@id/background2"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textadress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Udacity Street - Number 01010101 - Rio de Janeiro - Brazil"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:layout_below="@id/textbusiness"
+        android:layout_above="@+id/textemail"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail: jonathanbcsouza@gmail.com"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@id/mixing"
+        android:src="@drawable/mixing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textmastering"
+        android:layout_toStartOf="@+id/textmastering" />
+
+    <ImageView
+        android:id="@id/mastering"
+        android:src="@drawable/mastering"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textmastering"
+        android:layout_alignLeft="@+id/record"
+        android:layout_alignStart="@+id/record"
+        />
+</RelativeLayout>
